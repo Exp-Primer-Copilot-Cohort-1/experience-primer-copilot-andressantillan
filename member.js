@@ -1,8 +1,9 @@
-function skilssMember() {
-  return {
-    restrict: 'E',
-    templateUrl: 'templates/member.html',
-    controller: 'MemberController',
-    controllerAs: 'member'
-  };
+function skillsMember() {
+    var member = {
+        name: 'John',
+        age: 30,
+        skills: ['JS', 'CSS', 'HTML']
+    };
+    var skills = member.skills;
+    console.log(skills);
 }
